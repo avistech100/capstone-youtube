@@ -1,0 +1,203 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto/Roboto-Regular.ttf') format('truetype'); /* Adjust the file name and format as per your downloaded font files */
+    /* You can add additional src lines for different font formats if you have them */
+}
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('Roboto/Roboto-Bold.ttf') format('truetype'); /* Adjust the file name and format as per your downloaded font files */
+    /* You can add additional src lines for different font formats if you have them */
+}
+
+@font-face {
+    font-family: 'Roboto-thin';
+    src: url('Roboto/Roboto-Thin.ttf') format('truetype'); /* Adjust the file name and format as per your downloaded font files */
+    /* You can add additional src lines for different font formats if you have them */
+}
+
+
+
+body{
+    margin: 0;
+    font-family: roboto;
+}
+:root{
+    --blk-color: black;
+    --Outline-blk-clor: rgb(53, 52, 52);
+    --icon-blk-color: ;
+    --logo-size: ;
+    --tumbnail-size: 100%;
+    --tumbnail-radius: 4px;
+    --f-div-gap: 5px;
+    --div-gap: 10px;
+    --font-size-hd: 1rem;
+    --font-size-p: .8rem;
+    --p-opacity: .8;
+    --div--margin: 70px;
+    
+}
+.h-left{
+    margin-right: 1px;
+}
+.h-left > img{
+    border-radius: 50%;
+    width: 30px;
+}
+
+.hd1{
+    display: flex;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 15px;
+}
+.hd1 > img{
+    width: 100px;
+}
+.hd1 > *{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.search-div{
+margin-left: 10%;
+border-radius: 15px;
+height: 2rem;
+background-color: rgba(255, 255, 255, 0.397);
+position: relative;
+width: 50%;
+}
+input{
+height: 100%;
+width: 87%;
+background-color: rgb(29, 28, 28);
+border-radius: 15px;
+border: 1.5px solid var(--Outline-blk-clor);
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+}
+.hd2{
+    /* margin: 15px auto; */
+    margin: 5px 0;
+    overflow: scroll;
+}
+.hd2-div{
+    margin: 0;
+    width: 2000px;
+    height: 100%;
+    padding: 7px 0;
+}
+
+.hd2-div > a{
+    padding: 5px 10px;
+    background-color: var(--Outline-blk-clor);
+    color: white;
+    text-decoration: none;
+    font-size: .9em;
+    border-radius: 5px;
+    display: inline;
+    margin: 0;
+}
+.search-logo{
+}
+.nav-cont{
+    background-color: var(--blk-color);
+    color: white;
+    position: absolute;
+}
+.left-nav{
+    width:50px;
+}
+
+
+.cont1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--f-div-gap);
+    margin-left: var(--div--margin);
+}
+.sm-cont > img {
+    width: 100%;
+    border-radius: var(--tumbnail-radius);
+}
+.sm-cont > .nd-sm-cont{
+    display: flex;
+}
+.sm-cont > .nd-sm-cont > .sm-ndsm-const> h2{
+    margin-top: 0;
+    font-size: var(--font-size-hd);
+    margin-bottom: 1px;
+}
+.sm-cont > .nd-sm-cont > .sm-ndsm-const> p{
+    margin-top: 0;
+    font-size: var(--font-size-p);
+    opacity: var(--p-opacity);
+    margin-top: 1px;
+}
+.sm-cont > .nd-sm-cont > img{
+    width: 2em;
+    height: 2em;
+    justify-self: center;
+}
+.search-div > .sm-ndsm-const > p{
+    font-family: roboto-thin;
+}
+
+/* SHORTS */
+.short-cont{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: var(--div--margin);
+    margin-bottom: 20px;
+}
+.first-short-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: var(--f-div-gap);
+}
+.short-mini-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--div-gap);
+}
+.short-mini-div > img{
+    width: 100%;
+    border-radius: 5px;
+}
+.short-mini-div> div > h3{
+    font-size: var(--font-size-hd);
+}
+.short-mini-div> div > p{
+    font-size: var(--font-size-p);
+    opacity: var(--p-opacity);
+}
+.button-div{
+    text-align: center;
+    position: relative;
+}
+button{
+    
+    padding: 6px 20px;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--Outline-blk-clor);
+    width: 200px;
+    margin: 0;
+    
+}
+button::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:1px;
+    left: 0;
+    background-color: var(--Outline-blk-clor);
+    z-index: -1;
+    top: 50%;
+}
+.h-left{
+    justify-self: right;
+}
+
